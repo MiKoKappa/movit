@@ -53,7 +53,7 @@ export default function Searchbar() {
           ? results.results.map((result, i) => {
               if (i < 8) {
                 return (
-                  <a href={"/movie/" + result.id}>
+                  <a href={"/movit/#/movie/" + result.id}>
                     <li>
                       {result.title}{" "}
                       {result.release_date

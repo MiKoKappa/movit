@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route
-            path={"process.env.PUBLIC_URL" + "/movie/:id"}
+            path={process.env.PUBLIC_URL + "/movie/:id"}
             component={MoviePage}
           />
         </Switch>

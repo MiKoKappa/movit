@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import useStyles from "./styles/AppStyles";
 import MoviePage from "./components/MoviePage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const classes = useStyles();
@@ -10,14 +10,11 @@ function App() {
     localStorage.setItem("lang", "en");
   }
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className={classes.appdiv}>
         <Navbar />
         <Switch>
-          <Route
-            path={process.env.PUBLIC_URL + "/movie/:id"}
-            component={MoviePage}
-          />
+          <Route path={"/movie/:id"} component={MoviePage} />
         </Switch>
       </div>
     </Router>

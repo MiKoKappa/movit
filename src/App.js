@@ -14,7 +14,10 @@ function App() {
       <div className={classes.appdiv}>
         <Navbar />
         <Switch>
-          <Route path="/movie/:id" component={MoviePage} />
+          <Route
+            path={"process.env.PUBLIC_URL" + "/movie/:id"}
+            component={MoviePage}
+          />
         </Switch>
       </div>
     </Router>

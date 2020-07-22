@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import useStyles from "./styles/AppStyles";
+import MoviePage from "./components/MoviePage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const classes = useStyles();
+  if (!localStorage.getItem("lang")) {
+    localStorage.setItem("lang", "en");
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={classes.appdiv}>
+        <Navbar />
+        <Switch>
+          <Route path="/movie/:id" component={MoviePage} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

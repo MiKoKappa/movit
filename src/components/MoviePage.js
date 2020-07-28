@@ -49,7 +49,6 @@ export default function MoviePage(props) {
                 : ""
             }) no-repeat left`,
             backgroundSize: "contain",
-            filter: "brightness(80)",
           }}
         ></div>
       ) : (

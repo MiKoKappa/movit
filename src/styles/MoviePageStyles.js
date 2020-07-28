@@ -1,6 +1,11 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles({
+  html: {
+    "@media (min-width: 1360px)": {
+      fontSize: "24px",
+    },
+  },
   moviewindowwrapper: {
     height: "100vh",
     width: "100vw",
@@ -11,7 +16,7 @@ export default makeStyles({
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     background:
-      "radial-gradient( circle, rgba(0,0,0,0.07044824765843838) 0%, rgba(22,22,22,1) 60%) no-repeat left",
+      "radial-gradient( circle, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1) 60%) no-repeat left",
     "@media (max-width: 528px)": {
       justifyContent: "start",
       flexDirection: "column",

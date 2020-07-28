@@ -14,28 +14,28 @@ export default makeStyles({
   },
   titleblock: {
     "& h2": {
-      fontSize: "70px",
+      fontSize: "2rem",
       fontWeight: "bold",
       margin: "0",
       "@media (max-width: 528px)": {
-        fontSize: "40px",
+        fontSize: "1.6rem",
         textAlign: "center",
       },
     },
     "& h4": {
-      fontSize: "35px",
+      fontSize: "1.4rem",
       fontWeight: "bold",
       margin: "0",
       "@media (max-width: 528px)": {
-        fontSize: "20px",
+        fontSize: "1.2rem",
       },
     },
-    paddingBottom: "40px",
+    paddingBottom: "1rem",
   },
   imagewrapper: {
     borderRight: "1px rgba(255,255,255,0.8) solid",
     "& img": {
-      maxWidth: "360px",
+      maxWidth: "40vh",
       borderRadius: "30px",
       boxShadow: "10px 20px 20px rgba(0,0,0,0.7)",
       margin: "0 50px",
@@ -58,12 +58,12 @@ export default makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     borderBottom: "1px rgba(255,255,255,0.8) solid",
-    paddingBottom: "20px",
+    paddingBottom: "1rem",
     "@media (max-width: 528px)": {
       flexDirection: "column",
     },
     "& h5": {
-      fontSize: "16px",
+      fontSize: "0.8rem",
       fontWeight: "400",
       margin: "0",
     },
@@ -71,7 +71,7 @@ export default makeStyles({
       color: "white",
       border: "1px rgba(255,255,255,0.8) solid",
       padding: "5px 10px",
-      fontSize: "12px",
+      fontSize: "0.6rem",
       textDecoration: "none",
       borderRadius: "30px",
       textAlign: "center",
@@ -84,7 +84,7 @@ export default makeStyles({
   },
   movieinfoswrapper: {
     margin: "0 50px",
-    width: "30vw",
+    width: "40vw",
     display: "flex",
     flexDirection: "column",
     alignContent: "center",
@@ -95,15 +95,16 @@ export default makeStyles({
     },
   },
   overview: {
-    fontSize: "18px",
+    fontSize: "0.8rem",
     "@media (max-width: 528px)": {
       padding: "10px",
     },
   },
   titlelong: {
-    fontSize: "50px!important",
+    fontSize: "1.6rem!important",
   },
   tagline: {
+    fontSize: "0.8rem",
     "@media (max-width: 528px)": {
       textAlign: "center",
       padding: "0 10px",

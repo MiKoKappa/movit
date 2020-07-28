@@ -3,10 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles({
   inputfield: {
     "& i": {
-      fontSize: "0.8rem",
+      fontSize: "0.7rem",
     },
     "& input": {
-      fontSize: "0.8rem",
+      fontSize: "0.7rem",
       fontWeight: "bold",
       width: "300px",
       padding: "10px 20px",
@@ -42,7 +42,7 @@ export default makeStyles({
         cursor: "pointer",
         "& li": {
           padding: "10px 20px",
-          fontSize: "0.8rem",
+          fontSize: "0.6rem",
         },
       },
       "& a:hover": {

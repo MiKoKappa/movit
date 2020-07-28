@@ -25,13 +25,15 @@ export default function MoviePage(props) {
   } else {
     document.title = "MOVit";
   }
-  window.addEventListener("resize", () => {
+  const handleResize = () => {
     if (window.innerWidth > 1360) {
       document.querySelector("html").style.fontSize = "24px";
     } else {
       document.querySelector("html").style.fontSize = "";
     }
-  });
+  };
+  handleResize();
+  window.addEventListener("resize", handleResize);
   return (
     <div className={classes.moviewindowwrapper}>
       {movie.title && window.innerWidth > 528 ? (
@@ -41,12 +43,13 @@ export default function MoviePage(props) {
             height: "100vh",
             position: "absolute",
             zIndex: "0",
-            background: `radial-gradient(circle at 40%, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1) 55%), url(${
+            background: `radial-gradient(circle at 40%, rgba(0,0,0,0.1) 0%, rgba(22,22,22,1) 55%), url(${
               movie.backdrop_path
                 ? "https://image.tmdb.org/t/p/original" + movie.backdrop_path
                 : ""
             }) no-repeat left`,
             backgroundSize: "contain",
+            filter: "brightness(80)",
           }}
         ></div>
       ) : (

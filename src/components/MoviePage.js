@@ -25,6 +25,9 @@ export default function MoviePage(props) {
   } else {
     document.title = "MOVit";
   }
+  if (window.innerWidth > 1360) {
+    document.querySelector("html").style.fontSize = "24px";
+  }
   return (
     <div className={classes.moviewindowwrapper}>
       {movie.title && window.innerWidth > 528 ? (

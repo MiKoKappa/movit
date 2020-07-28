@@ -41,7 +41,7 @@ export default function MoviePage(props) {
             height: "100vh",
             position: "absolute",
             zIndex: "0",
-            background: `radial-gradient(circle at 40%, rgba(0,0,0,0.07044824765843838) 0%, rgba(22,22,22,1) 55%), url(${
+            background: `radial-gradient(circle at 40%, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1) 55%), url(${
               movie.backdrop_path
                 ? "https://image.tmdb.org/t/p/original" + movie.backdrop_path
                 : ""

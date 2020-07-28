@@ -25,9 +25,13 @@ export default function MoviePage(props) {
   } else {
     document.title = "MOVit";
   }
-  if (window.innerWidth > 1360) {
-    document.querySelector("html").style.fontSize = "24px";
-  }
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1360) {
+      document.querySelector("html").style.fontSize = "24px";
+    } else {
+      document.querySelector("html").style.fontSize = "";
+    }
+  });
   return (
     <div className={classes.moviewindowwrapper}>
       {movie.title && window.innerWidth > 528 ? (

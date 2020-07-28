@@ -19,6 +19,7 @@ export default function MoviePage(props) {
         .then((json) => setMovie(json));
     }
     fetchData();
+    document.title = `MOVit | ${movie.title}`;
   }, []);
   return (
     <div className={classes.moviewindowwrapper}>

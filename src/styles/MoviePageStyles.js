@@ -1,11 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles({
-  "& html": {
-    "@media (min-width: 1360px)": {
-      fontSize: "24px",
-    },
-  },
   moviewindowwrapper: {
     height: "100vh",
     width: "100vw",

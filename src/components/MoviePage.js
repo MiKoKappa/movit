@@ -19,8 +19,12 @@ export default function MoviePage(props) {
         .then((json) => setMovie(json));
     }
     fetchData();
-    document.title = `MOVit | ${movie.title}`;
   }, []);
+  if (movie.title) {
+    document.title = `MOVit | ${movie.title}`;
+  } else {
+    document.title = "MOVit";
+  }
   return (
     <div className={classes.moviewindowwrapper}>
       {movie.title && window.innerWidth > 528 ? (

@@ -4,12 +4,14 @@ export default makeStyles({
   navbardiv: {
     "& img": {
       margin: "0px",
+      width: "15vw",
+      maxWidth: "200px",
       "@media (max-width: 528px)": {
         maxWidth: "150px",
       },
     },
     zIndex: "2",
-    margin: "40px 50px",
+    margin: "2vh 50px",
     position: "absolute",
     display: "flex",
     flexDirection: "row",
@@ -23,5 +25,8 @@ export default makeStyles({
       alignContent: "space-between",
       position: "initial",
     },
+  },
+  lang: {
+    justifySelf: "center",
   },
 });

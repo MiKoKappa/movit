@@ -6,10 +6,19 @@ import LanguageChanger from "./LanguageChanger";
 
 export default function Navbar() {
   const classes = useStyles();
+  const handleResize = () => {
+    if (window.innerWidth > 1360) {
+      document.querySelector("html").style.fontSize = "24px";
+    } else {
+      document.querySelector("html").style.fontSize = "";
+    }
+  };
+  handleResize();
+  window.addEventListener("resize", handleResize);
   return (
     <div className={classes.navbardiv}>
       <img alt="Logo" src={logo} />
-      <LanguageChanger />
+      <LanguageChanger className={classes.lang} />
       <Searchbar />
     </div>
   );

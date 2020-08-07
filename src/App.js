@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import useStyles from "./styles/AppStyles";
 import MoviePage from "./components/MoviePage";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import MainPage from "./components/MainPage";
 
 function App() {
   const classes = useStyles();
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path={"/movie/:id"} component={MoviePage} />
+          <Route path={"/"} component={MainPage} />
         </Switch>
       </div>
     </Router>

@@ -63,7 +63,7 @@ export default makeStyles({
       flexDirection: "column",
     },
     "& h5": {
-      fontSize: "0.8rem",
+      fontSize: "0.7rem",
       fontWeight: "400",
       margin: "0",
     },

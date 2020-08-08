@@ -69,8 +69,8 @@ export default function MoviePage(props) {
     );
   }
   return (
-    <Backdrop open={true} className={classes.backdrop}>
-      <CircularProgress color="#FFF" />
+    <Backdrop className={classes.backdrop} open={true}>
+      <CircularProgress color="inherit" />
     </Backdrop>
   );
 }

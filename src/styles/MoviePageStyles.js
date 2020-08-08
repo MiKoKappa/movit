@@ -44,5 +44,6 @@ export default makeStyles({
   },
   backdrop: {
     zIndex: "1",
+    color: "#FFF",
   },
 });

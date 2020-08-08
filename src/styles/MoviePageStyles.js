@@ -42,4 +42,7 @@ export default makeStyles({
       color: "rgba(255,255,255,0.4)",
     },
   },
+  backdrop: {
+    zIndex: "1",
+  },
 });

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import MovieDetails from "./MovieDetails";
 import useStyles from "../styles/MoviePageStyles";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 export default function MoviePage(props) {
   const classes = useStyles();
@@ -45,7 +46,7 @@ export default function MoviePage(props) {
       ) : (
         ""
       )}
-      {movie.title ? <MovieDetails props={movie} /> : ""}
+      {movie.title ? <MovieDetails props={movie} /> : <CircularProgress />}
       <div className={classes.signatures}>
         <h3>
           {localStorage.getItem("lang") === "en" ? "Built by" : "Wykonał"}{" "}

@@ -18,7 +18,7 @@ export default function Navbar() {
   window.addEventListener("resize", handleResize);
   return (
     <div className={classes.navbardiv}>
-      <Link to="/#">
+      <Link to="/#/">
         <img alt="Logo" src={logo} />
       </Link>
       <LanguageChanger className={classes.lang} />

@@ -46,7 +46,9 @@ export default function MovieDetails(props) {
             ""
           )}
         </div>
-        <p className={classes.overview}>{movie.overview}</p>
+        <p className={classes.overview}>
+          {movie.overview ? movie.overview : "No data"}
+        </p>
       </div>
     </div>
   );

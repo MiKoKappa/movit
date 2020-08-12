@@ -54,7 +54,14 @@ export default function Searchbar() {
           ? results.results.map((result, i) => {
               if (i < 8) {
                 return (
-                  <Link to={"/movie/" + result.id}>
+                  <Link
+                    href={"/movie/" + result.id}
+                    onClick={() => {
+                      setTimeout(() => {
+                        window.location.reload();
+                      }, 1);
+                    }}
+                  >
                     <li>
                       {result.title}{" "}
                       {result.release_date

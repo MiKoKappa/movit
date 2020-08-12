@@ -55,7 +55,7 @@ export default function Searchbar() {
               if (i < 8) {
                 return (
                   <Link
-                    href={"/movie/" + result.id}
+                    to={"/movie/" + result.id}
                     onClick={() => {
                       setTimeout(() => {
                         window.location.reload();

@@ -3,6 +3,7 @@ import logo from "../images/movit_logo.svg";
 import useStyles from "../styles/NavbarStyles";
 import Searchbar from "./Searchbar";
 import LanguageChanger from "./LanguageChanger";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const classes = useStyles();
@@ -17,7 +18,9 @@ export default function Navbar() {
   window.addEventListener("resize", handleResize);
   return (
     <div className={classes.navbardiv}>
-      <img alt="Logo" src={logo} />
+      <Link to="/#">
+        <img alt="Logo" src={logo} />
+      </Link>
       <LanguageChanger className={classes.lang} />
       <Searchbar />
     </div>

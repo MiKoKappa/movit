@@ -8,7 +8,7 @@ export default function MovieCard(props) {
   const movie = props.movie;
   return (
     <Card className={classes.root} raised={true}>
-      <Link to={"/movit#/movie/" + movie.id}>
+      <Link to={"movie/" + movie.id}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -16,6 +16,8 @@ export default function MovieCard(props) {
             image={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
             title={movie.title}
           />
+          <h3 className={classes.title}>{movie.title}</h3>
+          <i class="fas fa-info-circle"></i>
         </CardActionArea>
       </Link>
     </Card>

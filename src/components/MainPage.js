@@ -6,7 +6,11 @@ export default function MainPage() {
   const classes = useStyles();
   return (
     <div className={classes.mainSection}>
-      <h3>Trending now</h3>
+      <h3>
+        {localStorage.getItem("lang") === "en"
+          ? "Trending now"
+          : "Zyskujące popularność"}
+      </h3>
       <TrendingMovies />
     </div>
   );

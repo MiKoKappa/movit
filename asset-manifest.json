@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/movit/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/movit/static/js/main.e358125a.chunk.js",
-    "main.js.map": "/movit/static/js/main.e358125a.chunk.js.map",
+    "main.js": "/movit/static/js/main.d8ae38eb.chunk.js",
+    "main.js.map": "/movit/static/js/main.d8ae38eb.chunk.js.map",
     "runtime-main.js": "/movit/static/js/runtime-main.54cb43a9.js",
     "runtime-main.js.map": "/movit/static/js/runtime-main.54cb43a9.js.map",
     "static/js/2.f89f658c.chunk.js": "/movit/static/js/2.f89f658c.chunk.js",
     "static/js/2.f89f658c.chunk.js.map": "/movit/static/js/2.f89f658c.chunk.js.map",
     "index.html": "/movit/index.html",
-    "precache-manifest.f460ad86f276f5a8b3e9731e33896813.js": "/movit/precache-manifest.f460ad86f276f5a8b3e9731e33896813.js",
+    "precache-manifest.efccb2b5f848734b7423116fff9eab3c.js": "/movit/precache-manifest.efccb2b5f848734b7423116fff9eab3c.js",
     "service-worker.js": "/movit/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/movit/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.f89f658c.chunk.js.LICENSE.txt": "/movit/static/js/2.f89f658c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.54cb43a9.js",
     "static/js/2.f89f658c.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.e358125a.chunk.js"
+    "static/js/main.d8ae38eb.chunk.js"
   ]
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import useStyles from "../styles/SearchbarStyles";
+import { Link } from "react-router-dom";
 
 export default function Searchbar() {
   const classes = useStyles();
@@ -56,14 +57,14 @@ export default function Searchbar() {
           ? results.results.map((result, i) => {
               if (i < 8) {
                 return (
-                  <a href={"/movit#/movie/" + result.id}>
+                  <Link to={"movie/" + result.id}>
                     <li>
                       {result.title}{" "}
                       {result.release_date
                         ? "(" + result.release_date.substring(0, 4) + ")"
                         : "(Undefined)"}
                     </li>
-                  </a>
+                  </Link>
                 );
               }
             })

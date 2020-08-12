@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/movit/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/movit/static/js/main.1730a37b.chunk.js",
-    "main.js.map": "/movit/static/js/main.1730a37b.chunk.js.map",
+    "main.js": "/movit/static/js/main.e358125a.chunk.js",
+    "main.js.map": "/movit/static/js/main.e358125a.chunk.js.map",
     "runtime-main.js": "/movit/static/js/runtime-main.54cb43a9.js",
     "runtime-main.js.map": "/movit/static/js/runtime-main.54cb43a9.js.map",
-    "static/js/2.b77a473b.chunk.js": "/movit/static/js/2.b77a473b.chunk.js",
-    "static/js/2.b77a473b.chunk.js.map": "/movit/static/js/2.b77a473b.chunk.js.map",
+    "static/js/2.f89f658c.chunk.js": "/movit/static/js/2.f89f658c.chunk.js",
+    "static/js/2.f89f658c.chunk.js.map": "/movit/static/js/2.f89f658c.chunk.js.map",
     "index.html": "/movit/index.html",
-    "precache-manifest.59e8182dcfb115055f0dd54a6a40cd81.js": "/movit/precache-manifest.59e8182dcfb115055f0dd54a6a40cd81.js",
+    "precache-manifest.f460ad86f276f5a8b3e9731e33896813.js": "/movit/precache-manifest.f460ad86f276f5a8b3e9731e33896813.js",
     "service-worker.js": "/movit/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/movit/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.b77a473b.chunk.js.LICENSE.txt": "/movit/static/js/2.b77a473b.chunk.js.LICENSE.txt",
+    "static/js/2.f89f658c.chunk.js.LICENSE.txt": "/movit/static/js/2.f89f658c.chunk.js.LICENSE.txt",
     "static/media/movit_logo.svg": "/movit/static/media/movit_logo.6f66a8e3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.54cb43a9.js",
-    "static/js/2.b77a473b.chunk.js",
+    "static/js/2.f89f658c.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.1730a37b.chunk.js"
+    "static/js/main.e358125a.chunk.js"
   ]
 }

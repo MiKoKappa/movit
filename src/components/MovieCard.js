@@ -8,7 +8,7 @@ export default function MovieCard(props) {
   const movie = props.movie;
   return (
     <Card className={classes.root} raised={true}>
-      <Link to={"/#/movie/" + movie.id}>
+      <Link to={"/movie/" + movie.id}>
         <CardActionArea>
           <CardMedia
             component="img"

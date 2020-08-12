@@ -11,7 +11,7 @@ function App() {
     localStorage.setItem("lang", "en");
   }
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className={classes.appdiv}>
         <Navbar />
         <Switch>

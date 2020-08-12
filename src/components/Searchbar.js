@@ -39,6 +39,9 @@ export default function Searchbar() {
         type="text"
         value={query}
         onChange={handleChange}
+        onBlur={() => {
+          setQuery("");
+        }}
       />
       {window.innerWidth > 528 ? (
         <i

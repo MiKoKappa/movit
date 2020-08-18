@@ -4,6 +4,7 @@ import useStyles from "./styles/AppStyles";
 import MoviePage from "./components/MoviePage";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
+import "../node_modules/react-modal-video/scss/modal-video.scss";
 
 function App() {
   const classes = useStyles();

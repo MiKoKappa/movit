@@ -3,12 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles({
   root: {
     "& i": {
-      margin: "-1rem",
+      display: "block",
+      textAlign: "center",
       fontSize: "2rem",
       fontWeight: "bold",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
       color: "white",
       opacity: "0",
       transition: "0.3s ease-in",
@@ -25,6 +23,7 @@ export default makeStyles({
     "&:hover": {
       "& h3": {
         opacity: "1",
+        transform: "translateY(0px)",
       },
       "& i": {
         opacity: "1",
@@ -38,13 +37,24 @@ export default makeStyles({
     padding: "10px",
     fontSize: "1rem",
     fontWeight: "bold",
-    position: "absolute",
+    position: "relative",
     zIndex: "2",
-    bottom: 0,
-    left: "10px",
     textAlign: "center",
     color: "white",
     opacity: "0",
+    transition: "0.3s ease-in",
+    transform: "translateY(20px)",
+  },
+  infobox: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
     transition: "0.3s ease-in",
   },
 });

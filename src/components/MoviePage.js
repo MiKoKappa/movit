@@ -6,6 +6,7 @@ import useStyles from "../styles/MoviePageStyles";
 export default function MoviePage(props) {
   const classes = useStyles();
   const [movie, setMovie] = useState({});
+  const [trailer, setTrailer] = useState({});
   useEffect(() => {
     async function fetchData() {
       await fetch(
@@ -17,6 +18,16 @@ export default function MoviePage(props) {
       )
         .then((response) => response.json())
         .then((json) => setMovie(json));
+      await fetch(
+        `https://api.themoviedb.org/3/movie/${
+          props.match.params.id
+        }/videos?api_key=ded08fd3869dfc28746b6d46d84e468b&language=${localStorage.getItem(
+          "lang"
+        )}`
+      )
+        .then((response) => response.json())
+        .then((json) => json.results.filter((n) => n.type === "Trailer"))
+        .then((json) => setTrailer(json[0]));
     }
     fetchData();
   }, []);
@@ -45,7 +56,7 @@ export default function MoviePage(props) {
       ) : (
         ""
       )}
-      {movie.title ? <MovieDetails props={movie} /> : ""}
+      {movie.title ? <MovieDetails movie={movie} trailer={trailer} /> : ""}
       <div className={classes.signatures}>
         <h3>
           {localStorage.getItem("lang") === "en" ? "Built by" : "Wykonał"}{" "}

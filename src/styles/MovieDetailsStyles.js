@@ -67,20 +67,6 @@ export default makeStyles({
       fontWeight: "400",
       margin: "0",
     },
-    "& a": {
-      color: "white",
-      border: "1px rgba(255,255,255,0.8) solid",
-      padding: "5px 10px",
-      fontSize: "0.6rem",
-      textDecoration: "none",
-      borderRadius: "30px",
-      textAlign: "center",
-      "& span": {
-        fontWeight: "bold",
-        fontSize: "1.2em",
-        paddingRight: "5px",
-      },
-    },
   },
   movieinfoswrapper: {
     margin: "0 50px",

@@ -16,8 +16,10 @@ export default function MovieCard(props) {
             image={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
             title={movie.title}
           />
-          <h3 className={classes.title}>{movie.title}</h3>
-          <i class="fas fa-info-circle"></i>
+          <div className={classes.infobox}>
+            <i class="fas fa-info"></i>
+            <h3 className={classes.title}>{movie.title}</h3>
+          </div>
         </CardActionArea>
       </Link>
     </Card>

@@ -5,7 +5,7 @@ export default makeStyles({
     background: "none",
     border: "none",
     color: "white",
-    fontSize: "16px",
+    fontSize: "0.6rem",
   },
   languagewrapper: {
     margin: "0 20px",
@@ -13,5 +13,6 @@ export default makeStyles({
   },
   selected: {
     fontWeight: "bold",
+    fontSize: "0.7rem",
   },
 });

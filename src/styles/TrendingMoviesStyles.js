@@ -5,5 +5,6 @@ export default makeStyles({
     flexGrow: 1,
     maxWidth: "100vw",
     justifyContent: "center",
+    margin: "1rem -10px",
   },
 });

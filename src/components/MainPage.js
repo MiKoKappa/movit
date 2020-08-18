@@ -1,6 +1,7 @@
 import React from "react";
 import useStyles from "../styles/MainPageStyles";
 import TrendingMovies from "./TrendingMovies";
+import IconButton from "./IconButton";
 
 export default function MainPage() {
   const classes = useStyles();

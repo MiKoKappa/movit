@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import useStyles from "../styles/MovieDetailsStyles";
+import IconButton from "./IconButton";
+import ModalVideo from "react-modal-video";
+import buttonClass from "../styles/IconButtonStyles";
 
 export default function MovieDetails(props) {
-  const movie = props.props;
+  const movie = props.movie;
+  const trailer = props.trailer;
+  const [modalOpen, setModalOpen] = useState(false);
   const classes = useStyles();
-  console.log(movie.title ? movie.title.length : "Not given");
+  const buttonClasses = buttonClass();
+  const openModal = () => {
+    setModalOpen(true);
+    console.log(trailer);
+  };
+  // console.log(movie.title ? movie.title.length : "Not given");
   return (
     <div className={classes.moviedetailswrapper}>
       <div className={classes.imagewrapper}>
@@ -38,10 +48,22 @@ export default function MovieDetails(props) {
           <h5>
             {movie.vote_average.toFixed(2)} <i class="fas fa-star" />
           </h5>
-          {movie.title && window.innerWidth > 528 ? (
-            <a href="#">
-              <span>TRAILER</span> <i class="fas fa-play" />
-            </a>
+          {trailer ? (
+            <div>
+              <ModalVideo
+                channel={trailer.site ? trailer.site.toLowerCase() : "youtube"}
+                isOpen={modalOpen}
+                videoId={trailer.key}
+                onClose={() => setModalOpen(false)}
+              />
+              <button
+                className={buttonClasses.button}
+                onClick={openModal}
+                style={{ cursor: "pointer" }}
+              >
+                <span>TRAILER</span> <i class="fas fa-play" />
+              </button>
+            </div>
           ) : (
             ""
           )}

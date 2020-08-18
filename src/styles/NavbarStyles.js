@@ -7,7 +7,7 @@ export default makeStyles({
       width: "15vw",
       maxWidth: "200px",
       "@media (max-width: 528px)": {
-        maxWidth: "150px",
+        width: "40vw",
       },
     },
     zIndex: "2",

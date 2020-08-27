@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f76f8a9b6fa6ae7f5e0c97c9b15a92a",
+    "revision": "9c8bc9f72dd248490a4110a340e75a75",
     "url": "/movit/index.html"
   },
   {
-    "revision": "e70dff4833bc585aec35",
+    "revision": "1826a84493e495728c3b",
     "url": "/movit/static/css/2.7550f3b0.chunk.css"
   },
   {
-    "revision": "129fc3f23f62f88fcecb",
+    "revision": "58c64489a096d43386f0",
     "url": "/movit/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "e70dff4833bc585aec35",
-    "url": "/movit/static/js/2.019a0074.chunk.js"
+    "revision": "1826a84493e495728c3b",
+    "url": "/movit/static/js/2.a7346f46.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/movit/static/js/2.019a0074.chunk.js.LICENSE.txt"
+    "url": "/movit/static/js/2.a7346f46.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "129fc3f23f62f88fcecb",
-    "url": "/movit/static/js/main.9e707a8b.chunk.js"
+    "revision": "58c64489a096d43386f0",
+    "url": "/movit/static/js/main.9ac92baf.chunk.js"
   },
   {
     "revision": "6536b2b240b8b0d1683a",

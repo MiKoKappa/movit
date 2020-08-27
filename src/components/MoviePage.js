@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import MovieDetails from "./MovieDetails";
 import useStyles from "../styles/MoviePageStyles";
+import Signatures from "./Signatures";
 
 export default function MoviePage(props) {
   const classes = useStyles();
@@ -57,22 +58,7 @@ export default function MoviePage(props) {
         ""
       )}
       {movie.title ? <MovieDetails movie={movie} trailer={trailer} /> : ""}
-      <div className={classes.signatures}>
-        <h3>
-          {localStorage.getItem("lang") === "en" ? "Built by" : "Wykonał"}{" "}
-          <a href="https://github.com/MiKoKappa">
-            Mikołaj Tkaczyk <i class="fab fa-github"></i>
-          </a>
-        </h3>
-        <h3>
-          {localStorage.getItem("lang") === "en"
-            ? "Data provided by"
-            : "Informacje z"}{" "}
-          <a href="https://www.themoviedb.org">
-            TMDB <i class="fas fa-info"></i>
-          </a>
-        </h3>
-      </div>
+      <Signatures />
     </div>
   );
 }

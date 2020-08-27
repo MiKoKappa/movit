@@ -69,7 +69,11 @@ export default function MovieDetails(props) {
           )}
         </div>
         <p className={classes.overview}>
-          {movie.overview ? movie.overview : "No data"}
+          {movie.overview
+            ? movie.overview
+            : localStorage.getItem("lang") === "en"
+            ? "No overwiew"
+            : "Brak opisu"}
         </p>
       </div>
     </div>

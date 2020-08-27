@@ -18,8 +18,9 @@ export default makeStyles({
       fontWeight: "bold",
       margin: "0",
       "@media (max-width: 528px)": {
-        fontSize: "1.6rem",
+        fontSize: "2rem",
         textAlign: "center",
+        marginTop: "2rem",
       },
     },
     "& h4": {
@@ -27,7 +28,8 @@ export default makeStyles({
       fontWeight: "bold",
       margin: "0",
       "@media (max-width: 528px)": {
-        fontSize: "1.2rem",
+        fontSize: "1rem",
+        fontWeight: "400",
       },
     },
     paddingBottom: "1rem",
@@ -41,7 +43,7 @@ export default makeStyles({
       margin: "0 50px",
       "@media (max-width: 528px)": {
         maxWidth: "80vw",
-        margin: "10px 0",
+        margin: "2rem 0",
       },
     },
     display: "flex",
@@ -61,6 +63,7 @@ export default makeStyles({
     paddingBottom: "1rem",
     "@media (max-width: 528px)": {
       flexDirection: "column",
+      margin: "2rem 0",
     },
     "& h5": {
       fontSize: "0.7rem",
@@ -82,8 +85,9 @@ export default makeStyles({
   },
   overview: {
     fontSize: "0.8rem",
+    textAlign: "justify",
     "@media (max-width: 528px)": {
-      padding: "10px",
+      padding: "5%",
     },
   },
   titlelong: {

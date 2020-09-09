@@ -1,5 +1,7 @@
 # MOVit
 ## The movie database with non-conventional design
+### Link to app: https://mikokappa.github.io/movit/
+
 
 My first real React.JS project, which is using existing API - TMDB.
 The app is not properly responsive and not all features are in it this day. It will be updated to be polished and satisfactory.
